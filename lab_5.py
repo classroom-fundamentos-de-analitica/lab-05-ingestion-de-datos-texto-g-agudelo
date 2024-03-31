@@ -27,7 +27,7 @@ for ruta in archivo:
 
 #Train Dataframe
 traindf= pd.DataFrame(traindic)
-traindf.to_csv("train_dataset.csv")
+traindf.to_csv("train_dataset.csv",index=False)
 
 #Test negative
 archivo = glob.glob("test/"+sentiment[0]+"/*.*")
@@ -52,5 +52,5 @@ for ruta in archivo:
 
 #Test Dataframe
 testdf= pd.DataFrame(testdic)
-testdf.to_csv("test_dataset.csv")
+testdf.to_csv("test_dataset.csv",index=False)
 
